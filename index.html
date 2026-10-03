@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi App tipo Paint</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="paint-container">
+    <header class="toolbar">
+      <!-- Colores -->
+      <div class="tool-group">
+        <label>Colores:</label>
+        <div class="color-picker">
+          <button class="color-btn active" data-color="#000000" style="background-color: #000000;"></button>
+          <button class="color-btn" data-color="#FF3B30" style="background-color: #FF3B30;"></button>
+          <button class="color-btn" data-color="#34C759" style="background-color: #34C759;"></button>
+          <button class="Aquí tienes el código completo de una aplicación web tipo **Paint** interactiva, desarrollada con **HTML, CSS y JavaScript (HTML5 Canvas)**. Cumple con todos los requerimientos: incluye 5 colores para seleccionar, 3 tamaños de grosor de pincel y un botón para borrar todo el lienzo.
+
+---
+
+### Código Completo
+
+#### `index.html`
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi App tipo Paint</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mi Paint App</h1>
+  </header>
+
+  <main class="paint-container">
+    <div class="toolbar">
+      <!-- Colores -->
+      <div class="section">
+        <label>Colores:</label>
+        <div class="color-palette">
+          <button class="color-btn active" style="background-color: #000000;" data-color="#000000"></button>
+          <button class="color-btn" style="background-color: #e63946;" data-color="#e63946"></button>
+          <button class="color-btn" style="background-color: #1d3557;" data-color="#1d3557"></button>
+          <button class="color-btn" style="background-color: #2a9d8f;" data-color="#2a9d8f"></button>
+          <button class="color-btn" style="background-color: #e9c46a;" data-color="#e9c46a"></button>
+        </div>
+      </div>
+
+      <!-- Grosores de Pluma -->
+      <div class="section">
+        <label>Grosor:</label>
+        <div class="size-palette">
+          <button class="size-btn active" data-size="3">Delgado</button>
+          <button class="size-btn" data-size="8">Mediano</button>
+          <button class="size-btn" data-size="16">Grueso</button>
+        </div>
+      </div>
+
+      <!-- Borrar todo -->
+      <div class="section">
+        <button id="clear-btn" class="action-btn">Borrar Todo</button>
+      </div>
+    </div>
+
+    <!-- Lienzo de dibujo -->
+    <canvas id="paintCanvas" width="800" height="500"></canvas>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
